@@ -4,9 +4,9 @@
   "description": "My site listed gist of my works",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "Kumar Sanjay",
+  "author": "kumar sanjay",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
