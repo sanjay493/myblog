@@ -21,6 +21,10 @@
   },
   "bugs": {
     "url": "https://github.com/sanjay493/myblog/issues" 
+},
+"engines": {
+  "node": "10.x",
+  "npm" : "6.x"
 }
 
 }
