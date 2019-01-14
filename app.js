@@ -46,4 +46,6 @@ app.post('/edit/:id', editNews);
 app.get('/technews',techNews);
 app.get('*', NotFound);
 
-app.listen(process.env.PORT);
+app.listen(port,() => {
+    console.log('Server is Running at port:', port);
+});
