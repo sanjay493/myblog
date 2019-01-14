@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<% include partials/head.ejs %>
+
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+    <main>
+    
+    <div class="section-3">
+      <h3 class="text-center">Latest Tech News</h3>
+  <div class="row">
+    <% for (var i=0; i<news.length; i++) { %>
+      <div class="col-md-4">
+          
+          <div class="d-flex flex-column">
+            <div class="card border-success">
+              <div class="card-header"><%= news[i].headline %></div>
+              <div class="card-body">
+                    <p class="card-text  text-justify"><%= news[i].para1 %></p> 
+            <a href="<%= news[i].link %>" class="btn btn-primary">Read more...
+            </a>
+            
+            <p><%= news[i].news_date %></p>
+             
+          </div>
+      </div>
+    </div></div>
+
+<% } %>
+    </div>
+            
+           
+</div>         
+ 
+</main>           
+<% include partials/footer.ejs %>
+<% include partials/script.ejs %>
+ </body>
+</html>

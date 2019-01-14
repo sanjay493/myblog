@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<% include partials/head.ejs %>
+
+    <title><%= title %></title>
+  </head>
+  <body>
+  <% include partials/header.ejs %>
+
+  <div class="container">
+    <% if (message != '') { %>
+        <p class="text-center text-danger"><%= message %></p>
+    <% } %>
+    <form class="add-news-form" action="" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" name="headline" id="headline" placeholder="Headline" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-10">
+                <input type="textarea" class="form-control" name="para1" id="para1" placeholder="First Paragraph" required>
+            </div>
+        </div>
+        <div class="form-row">
+                <div class="form-group col-md-10">
+                <input type="text" class="form-control" name="link" id="link" placeholder="Web Link" required>
+            </div>
+        </div>
+        <div class="form-row">
+                <div class="form-group col-md-10">
+                <input type="datetime" class="datepicker" data-date-format="yyyy/mm/dd" name="news_date" id="news_date" placeholder="Date" required>
+                <!-- <div class="input-group-append">
+                   
+                <span class="fa fa-calendar"></span>
+                </div> -->
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add News</button>
+    </form>
+ </div>
+           
+           
+           
+           
+           
+            
+<% include partials/footer.ejs %>
+<% include partials/script.ejs %>
+ </body>
+</html>

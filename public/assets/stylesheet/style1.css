@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu');
+body{
+padding: 0%;
+margin: 0%;
+font-family: 'Lato';
+}
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: lightcoral !important;
+}
+.nav-link{
+   font-size: 16px;
+   margin: 10px;
+   color: black !important;
+   font-family: 'Roboto Condensed'; 
+}
+.nav-link:hover{
+    color: aqua !important;
+}
+.active .nav-link{
+    color: aqua !important;
+}
+
+.menu-right-btn{
+    padding: 13px 36px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+.menu-right-btn:hover{
+    color: white;
+    background-color: black;
+}
+.site-content{
+    background-image: url('/assets/img/apple.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.site-title, .site-desc{
+    color: antiquewhite;
+    font-family: 'Righteous';
+}
+.site-title{
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-size: 50px;
+}
+.site-desc{
+    font-size: 20px;
+    padding-left: 10%;
+}
+.site-btn1{
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+.site-btn2{
+
+    background-color:white;
+}
+.site-btn1, .site-btn2{
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+/*  section 1*/
+.section1 .heading-1{
+    margin-top: 8%;
+}
+.section1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+.section-1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.section-1 .card-text, .para-1{
+    color: rgba(0, 0, 0, 0.59);
+}
+.section-1{
+    margin-bottom: 8%;
+}
+.card{
+    width: 20rem;
+}
+/* section 2*/
+.section-2 .container-fluid{
+    background-image: url('/assets/img/wine.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+.section-2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4%;
+    font-family: 'Righteous';
+    width: 80%;
+    color: greenyellow;
+}
+.section-2 .para{
+    width: 80%;
+    font-family: 'Ubantu';
+    font-size: 20px;
+    color:yellow;
+    margin-bottom: 7%;
+}
+.section-2 .btn{
+margin-bottom: 15%;
+width: 30%;
+padding:2% 5%;
+}
+/*section 3*/
+
+.section-3{
+    margin-top: 6%;
+}
+.section-3 i{
+    color: darkolivegreen;
+}
+.section-3 p{
+    color: rgba(0,0,0,0.59);
+}
+
+/*section 4*/
+
+.section-4{
+    margin-top: 8%;
+}
+.section-4 p{
+    color: white;
+}
+.section-4 .row .col-md-7, .col-md-5{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+ .section-4 img{
+    width: 90%;
+} 
+.section-4 a{
+    color: lightseagreen;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+/*footer*/
+.social i{
+    color: royalblue;
+}
+
+ @media (max-width: 991px){
+    .section-1 .card{
+        width: 14rem;
+    }
+    .section-4 .col-md-7{
+        width: 360px;
+    }
+}
+@media (max-width: 767px){
+    .section-1 .card{
+        width: 95%;
+    }
+     
+}
+
+ @media (max-width: 425px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding: 15%;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+    .section-1 .card{
+        width: 95%;
+    }
+    .section-1 .heading-1, .section-1 .heading-2{
+        font-size: 25px;
+    }
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+    .footer input[type="button"]{
+        margin-top: 5%;
+
+    }
+} 
