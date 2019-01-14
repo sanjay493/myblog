@@ -15,5 +15,14 @@
     "express": "^4.16.4",
     "express-fileupload": "^1.1.1-alpha.1",
     "mysql": "^2.16.0"
-  }
+  },
+  "repository": {"type": "git",
+    "url": "https://github.com/sanjay493/myblog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanjay493/uradswithus/issues"
+  },
+  "homepage": "https://github.com/sanjay493/uradswithus#readme"
+}
+
 }
