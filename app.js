@@ -46,4 +46,4 @@ app.post('/edit/:id', editNews);
 app.get('/technews',techNews);
 app.get('*', NotFound);
 
-app.listen(process.env.PORT || port);
+app.listen(process.env.PORT);
