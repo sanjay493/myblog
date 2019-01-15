@@ -9,7 +9,7 @@ const {getHomePage, techNews, NotFound} = require('./routes/index');
 const {addNewsPage, addNews, deleteNews, editNews, editNewsPage} = require('./routes/news');
 
 
-const port = 4000;
+const port = 3000;
 
 const db = mysql.createConnection({
     host:'eu-cdbr-west-02.cleardb.net',
