@@ -12,10 +12,10 @@ const {addNewsPage, addNews, deleteNews, editNews, editNewsPage} = require('./ro
 const port = 4000;
 
 const db = mysql.createConnection({
-    host:'us-cdbr-iron-east-01.cleardb.net',
-    user:'b50af25f0084f4',
-    password: '000b550f',
-    database:'heroku_df575a44503662a'
+    host:'eu-cdbr-west-02.cleardb.net',
+    user:'b80c97a8ae59f0',
+    password: 'e0664e82',
+    database:'heroku_330833ee1cd03c6'
 });
 
 db.connect((err) => {
