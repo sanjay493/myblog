@@ -9,7 +9,7 @@ const {getHomePage, techNews, NotFound} = require('./routes/index');
 const {addNewsPage, addNews, editNews, editNewsPage} = require('./routes/news');
 
 
-const port = 3000;
+const port = 5000;
 
 const db = mysql.createConnection({
     host:'eu-cdbr-west-02.cleardb.net',
@@ -28,7 +28,7 @@ global.db = db;
 app.set('port', process.env.PORT || port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({ extented: false}));
+app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
