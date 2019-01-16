@@ -6,7 +6,7 @@ const path = require('path');
 const app =express();
 
 const {getHomePage, techNews, NotFound} = require('./routes/index');
-const {addNewsPage, addNews, deleteNews, editNews, editNewsPage} = require('./routes/news');
+const {addNewsPage, addNews, editNews, editNewsPage} = require('./routes/news');
 
 
 const port = 3000;
@@ -25,7 +25,7 @@ db.connect((err) => {
 
 global.db = db;
 
-app.set('port', process.env.port || port);
+app.set('port', process.env.PORT || port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extented: false}));
