@@ -9,8 +9,6 @@ const {getHomePage, techNews, NotFound} = require('./routes/index');
 const {addNewsPage, addNews, editNews, editNewsPage} = require('./routes/news');
 
 
-const port = 5000;
-
 const db = mysql.createConnection({
     host:'eu-cdbr-west-02.cleardb.net',
     user:'b80c97a8ae59f0',
@@ -24,14 +22,25 @@ db.connect((err) => {
 });
 
 global.db = db;
-
-app.set('port', process.env.PORT || port);
+var port = normalizePort(process.env.PORT || '8000');
+app.set('port', port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
+
+function normalizePort(val){
+    var port = parseInt(val,10);
+    if(isNaN(port)){
+        return val;
+    }
+    if(port>=0){
+        return port;
+    }
+    return false;
+}
 
 // routes for the app
 
